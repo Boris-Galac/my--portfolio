@@ -1,0 +1,65 @@
+.container {
+  width: min(100% - 32px, 1024px);
+  margin-inline: auto;
+}
+
+.d-flex {
+  display: flex;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.d-grid {
+  display: grid;
+}
+.grid-center {
+  display: grid;
+  place-items: center;
+}
+.flex-row-center {
+  display: flex;
+  align-items: center;
+}
+.p-05 {
+  padding: 0.5rem;
+}
+.p-1 {
+  padding: 1rem;
+}
+.px-05 {
+  padding-inline: 0.5rem;
+}
+.px-1 {
+  padding-inline: 1rem;
+}
+.mx-1 {
+  margin-inline: 1rem;
+}
+
+/* OSTALO */
+
+.primary-btn {
+  padding: 0.7rem 1.4rem;
+  border-radius: 100vmax;
+  background-color: var(--neutral-900);
+  font-weight: 400;
+  overflow: hidden;
+  isolation: isolate;
+  letter-spacing: 1px;
+}
+.primary-btn::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  inset: 0;
+  background: linear-gradient(to right, hsl(300, 87%, 41%), hsl(227, 91%, 60%));
+  z-index: -1;
+  transition: 0.3s;
+  border-radius: 100vmax;
+}
+.primary-btn:hover::after {
+  box-shadow: 0 0 10px rgb(241, 15, 241);
+  width: 100%;
+}

@@ -1,0 +1,145 @@
+/* HERO SECTION */
+
+.hero {
+  position: relative;
+  height: 100%;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  right: 0.5rem;
+  width: 1px;
+  height: 80%;
+  background-color: rgba(255, 255, 255, 0.333);
+}
+
+/* blob */
+
+.blob {
+  aspect-ratio: 1;
+  width: min(70vw, 400px);
+  overflow: hidden;
+  border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+  background: url("https://i.postimg.cc/7PBzjpdX/avatar.png") no-repeat center
+    center/cover;
+  box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.2);
+  animation: blob 3.7s linear infinite;
+  margin: auto;
+}
+
+@keyframes blob {
+  0%,
+  100% {
+    background-color: rgb(148, 251, 4);
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+  }
+
+  33% {
+    background-color: rgb(234, 220, 151);
+
+    border-radius: 42% 28% 48% 48% / 28% 28% 72% 72%;
+  }
+
+  66% {
+    background-color: rgb(251, 165, 4);
+
+    border-radius: 100% 56% 56% 100% / 100% 100% 56% 56%;
+  }
+}
+
+.hero__headline-wrapper {
+}
+.hero-wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 40%;
+  left: 50%;
+  width: max-content;
+  gap: 4rem;
+}
+.hero__headline__inner-wrapper {
+  gap: 0.3rem;
+  margin-bottom: 1rem;
+}
+.hero__role {
+  gap: 1rem;
+}
+.hero__green-text {
+  color: var(--green-text);
+  font-weight: 400;
+}
+.hero__main-headline {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+.typing-text {
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+.hero-cta {
+}
+
+.background-text {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.02);
+  text-transform: uppercase;
+  user-select: none;
+}
+.graphic-bg-text {
+  font-size: clamp(6rem, 7vw, 8rem);
+  top: 5rem;
+  font-weight: 600;
+  letter-spacing: 5px;
+  animation: graphic-text 10s ease-in-out alternate infinite;
+}
+@keyframes graphic-text {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(50%);
+  }
+}
+.frontend-bg-text {
+  bottom: 28vh;
+  font-size: 5rem;
+  animation: frontend-text 7s ease-in-out alternate infinite;
+}
+@keyframes frontend-text {
+  from {
+    transform: translateX(-30%);
+  }
+  to {
+    transform: translateX(60%);
+  }
+}
+.wp-text {
+  font-size: 15rem;
+  font-weight: 800;
+  letter-spacing: 30px;
+  bottom: 40vh;
+  animation: wp-text 30s ease-in-out alternate infinite;
+}
+@keyframes wp-text {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    transform: translateX(-20%);
+  }
+}
+.ui-bg-text {
+  font-size: 15rem;
+  font-weight: 800;
+  letter-spacing: 30px;
+  bottom: 6vh;
+  animation: ui-text 10s ease-in-out alternate infinite;
+}
+@keyframes ui-text {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
