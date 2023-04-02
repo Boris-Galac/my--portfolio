@@ -3,15 +3,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Boris Galac</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+    <!-- Primary Meta Tags -->
+    <meta
+      name="title"
+      content="Boris Galac - This is a portfolio site about web design, web development and graphic design."
     />
+    <meta
+      name="description"
+      content="Boris Galac - This is a portfolio site about web design, web development and graphic design."
+    />
+    <meta
+      name="keywords"
+      content="boris galac, web design, web development, graphic design, portfolio, collaboration, job"
+    />
+    <title>Boris Galac</title>
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon" />
     <link rel="stylesheet" href="/src/css/style.css" />
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+    <script defer src="/src/js/main.js"></script>
   </head>
 
   <body>
@@ -19,52 +28,59 @@
       <nav class="nav p-05 px-1">
         <ul class="nav__list flex-row-center">
           <li class="nav__item">
-            <a href="#" class="nav__link"
+            <a href="#" class="nav__link" aria-label="web design"
               ><img
                 src="/src/assets/icons/header-icons/mobile/design-icon.svg"
                 aria-hidden="true"
+                alt="web design link"
             /></a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link"
+            <a href="#" class="nav__link" aria-label="web development"
               ><img
                 src="/src/assets/icons/header-icons/mobile/dev-icon.svg"
                 aria-hidden="true"
+                alt="web development link"
             /></a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link"
+            <a href="#" class="nav__link" aria-label="graphic design"
               ><img
                 src="/src/assets/icons/header-icons/mobile/graphic-design-icon.svg"
                 aria-hidden="true"
+                alt="graphic design link"
             /></a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link"
+            <a href="#" class="nav__link" aria-label="home"
               ><img
                 src="/src/assets/icons/header-icons/mobile/home-icon.svg"
                 aria-hidden="true"
+                alt="home link"
             /></a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link"
+            <a href="#" class="nav__link" aria-label="blog"
               ><img
                 src="/src/assets/icons/header-icons/mobile/blog-icon.svg"
                 aria-hidden="true"
+                alt="blog link"
             /></a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link"
+            <a href="#" class="nav__link" aria-label="profile"
               ><img
                 src="/src/assets/icons/header-icons/mobile/profile-icon.svg"
                 aria-hidden="true"
+                alt="profile link"
             /></a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link"
+            <a href="#" class="nav__link" aria-label="phone"
               ><img
                 src="/src/assets/icons/header-icons/mobile/phone-icon.svg"
                 aria-hidden="true"
+                alt="phone link"
             /></a>
           </li>
         </ul>
@@ -75,9 +91,9 @@
             src="/src/assets/icons/header-icons/galac-logo.svg"
             alt="galac portfolio logo"
           />
-          <caption>
+          <!-- <caption>
             <div class="screen-reader-text sr-only">Galac Design Logo</div>
-          </caption>
+          </caption> -->
         </figure>
         <div class="top-bar__right-col flex-row-center">
           <buttton class="top-bar__search">
@@ -86,7 +102,7 @@
               alt="search icon"
             />
           </buttton>
-          <label class="switch">
+          <label class="switch" role="switch" aria-checked="false" tabindex="0">
             <input type="checkbox" />
             <span class="slider"></span>
           </label>
@@ -94,11 +110,16 @@
       </div>
     </header>
     <main class="main">
-      <!-- hero section -->
+      <!-- HERO SECTION -->
+
       <section class="hero grid-center">
         <div class="container">
           <div class="hero-wrapper d-grid">
-            <div class="blob"></div>
+            <div
+              class="blob"
+              role="img"
+              aria-label="Image of Boris Galac"
+            ></div>
             <div class="hero__headline-wrapper d-grid">
               <div class="hero__headline__inner-wrapper d-grid">
                 <p class="hero__green-text flex-row-center">
@@ -107,7 +128,7 @@
                 <h1 class="hero__main-headline">Boris Galac</h1>
                 <div class="hero__role flex-row-center">
                   <p class="hero__green-text">i'm</p>
-                  <h2 class="typing-text">UI/UX design</h2>
+                  <h2 class="typing-text auto-type"></h2>
                 </div>
                 <span class="hero__green-text"
                   >and I offer web and graphic solutions for you</span
@@ -117,10 +138,189 @@
             </div>
           </div>
         </div>
-        <p class="background-text graphic-bg-text">graphic</p>
-        <p class="background-text wp-text">wordpress</p>
-        <p class="background-text frontend-bg-text">frontend</p>
-        <p class="background-text ui-bg-text">ux/ui</p>
+        <p class="hero__background-text graphic-bg-text">graphic</p>
+        <p class="hero__background-text wp-text">wordpress</p>
+        <p class="hero__background-text frontend-bg-text">frontend</p>
+        <p class="hero__background-text ui-bg-text">ux/ui</p>
+        <button class="scroll-down" aria-label="scoll down button">
+          <img src="/src/assets/icons/scroll-down-btn.svg" aria-hidden="true" />
+        </button>
+      </section>
+
+      <!------------->
+      <!-- OFFER SECTION -->
+
+      <section class="offer mb-4">
+        <div class="container">
+          <h2 class="h2--heading mb-3" data-shadow="what i do">what i do</h2>
+          <div class="offer-wrapper d-grid">
+            <figure class="offer-banner">
+              <div class="offer-banner__img-wrapper"></div>
+              <img
+                class="offer__img"
+                src="/src/assets/images/offer-img-2.jpg"
+                alt="web design icon"
+              />
+              <div class="offer-banner__body">
+                <h3 class="offer-banner__heading">web design</h3>
+                <a class="see-more-link" aria-label="Link to web design section"
+                  >See my work
+                  <img
+                    src="/src/assets/icons/see-more-arrow-icon.svg"
+                    aria-hidden="true"
+                /></a>
+              </div>
+            </figure>
+            <figure class="offer-banner">
+              <div class="offer-banner__img-wrapper"></div>
+              <img
+                class="offer__img"
+                src="/src/assets/images/offer-img-1.jpg"
+                alt="web design icon"
+              />
+              <div class="offer-banner__body">
+                <h3 class="offer-banner__heading">web development</h3>
+                <a
+                  class="see-more-link"
+                  aria-label="Link to web development section"
+                  >See my work
+                  <img
+                    src="/src/assets/icons/see-more-arrow-icon.svg"
+                    aria-hidden="true"
+                /></a>
+              </div>
+            </figure>
+            <figure class="offer-banner">
+              <div class="offer-banner__img-wrapper"></div>
+              <img
+                class="offer__img"
+                src="/src/assets/images/offer-img-3.jpg"
+                alt="web design icon"
+              />
+              <div class="offer-banner__body">
+                <h3 class="offer-banner__heading">graphic design</h3>
+                <a
+                  class="see-more-link"
+                  aria-label="Link to graphic design section"
+                  >See my work
+                  <img
+                    src="/src/assets/icons/see-more-arrow-icon.svg"
+                    aria-hidden="true"
+                /></a>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!------------->
+      <!-- SKILLSET SECTION -->
+
+      <section class="skillset">
+        <div class="container">
+          <div class="skillset__header my-4">
+            <h2 class="h2--heading mb-2" data-shadow="skillset">my skillset</h2>
+            <p class="p-text">
+              The technologies that I actively use in creating web and graphic
+              solutions are as follows:
+            </p>
+          </div>
+          <div class="skillset__skill-card-wrapper d-flex">
+            <figure class="skill-card">
+              <img
+                src="/src/assets/icons/skillset-cards/skillset__card.svg"
+                alt="html"
+                title="Html"
+              />
+            </figure>
+            <figure class="skill-card">
+              <img
+                src="/src/assets/icons/skillset-cards/skillset__card-1.svg"
+                alt="css"
+                title="Css"
+              />
+            </figure>
+            <figure class="skill-card">
+              <img
+                src="/src/assets/icons/skillset-cards/skillset__card-2.svg"
+                alt="javascript"
+                title="JavaScript"
+              />
+            </figure>
+            <figure class="skill-card">
+              <img
+                src="/src/assets/icons/skillset-cards/skillset__card-3.svg"
+                alt="github"
+                title="Github"
+              />
+            </figure>
+            <figure class="skill-card">
+              <img
+                src="/src/assets/icons/skillset-cards/skillset__card-4.svg"
+                alt="adobe inDesign"
+                title="Adobe inDesign"
+              />
+            </figure>
+            <figure class="skill-card">
+              <img
+                src="/src/assets/icons/skillset-cards/skillset__card-5.svg"
+                alt="adobe photoshop"
+                title="Adobe Photoshop"
+              />
+            </figure>
+            <figure class="skill-card">
+              <img
+                src="/src/assets/icons/skillset-cards/skillset__card-6.svg"
+                alt="adobe illustrator"
+                title="Adobe Illustrator"
+              />
+            </figure>
+            <figure class="skill-card">
+              <img
+                src="/src/assets/icons/skillset-cards/skillset__card-7.svg"
+                alt="adobe Xd"
+                title="Adobe Xd"
+              />
+            </figure>
+            <figure class="skill-card">
+              <img
+                src="/src/assets/icons/skillset-cards/skillset__card-8.svg"
+                alt="figma"
+                title="Figma"
+              />
+            </figure>
+            <figure class="skill-card">
+              <img
+                src="/src/assets/icons/skillset-cards/skillset__card-9.svg"
+                alt="git"
+                title="Git"
+              />
+            </figure>
+            <figure class="skill-card">
+              <img
+                src="/src/assets/icons/skillset-cards/skillset__card-10.svg"
+                alt="custom theme wordpress development"
+                title="Wordpress Theme Development"
+              />
+            </figure>
+            <figure class="skill-card">
+              <img
+                src="/src/assets/icons/skillset-cards/skillset__card-11.svg"
+                alt="wordpress elementor"
+                title="Wordpress Elementor"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!------------->
+      <!-- BIO SECTION -->
+
+      <section class="bio">
+        <div class="container">
+          <h2 class="h2--heading mb-2" data-shadow="bio">bio</h2>
+        </div>
       </section>
     </main>
   </body>

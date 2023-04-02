@@ -15,6 +15,7 @@ h5 {
   letter-spacing: 1px;
   color: var(--white);
   letter-spacing: 1px;
+  font-weight: initial;
 }
 input,
 button,
@@ -25,6 +26,43 @@ select {
 .h1--heading {
 }
 .h2--heading {
+  position: relative;
+  font-size: 3rem;
+  text-transform: uppercase;
+  isolation: isolate;
+}
+.h2--heading::after {
+  content: attr(data-shadow);
+  position: absolute;
+  font-size: inherit;
+  color: var(--white);
+  opacity: 0.05;
+  z-index: -1;
+  display: block;
+  bottom: -15px;
+  left: 0;
+  animation: h3-heading 3.5s alternate infinite ease-in-out;
+}
+@keyframes h3-heading {
+  from {
+    transform: translateX(0px);
+    letter-spacing: 7px;
+  }
+  to {
+    transform: translateX(30px);
+    letter-spacing: 0;
+  }
 }
 .h3--heading {
+}
+
+/* styled heading */
+
+.offer-banner__heading {
+  position: absolute;
+  right: 5vw;
+  bottom: 4.2rem;
+  text-transform: uppercase;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  width: max-content;
 }

@@ -1,0 +1,11 @@
+.auto-type {
+  position: relative;
+  height: 3.2rem;
+  font-size: 2rem;
+}
+.typed-cursor {
+  background-color: #ffff;
+  color: #fff;
+  height: 35px;
+  transform: translate(-4px, -10px);
+}

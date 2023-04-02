@@ -3,11 +3,12 @@
 .hero {
   position: relative;
   height: 100%;
+  isolation: isolate;
 }
 .hero::after {
   content: "";
   position: absolute;
-  right: 0.5rem;
+  right: 0.7rem;
   width: 1px;
   height: 80%;
   background-color: rgba(255, 255, 255, 0.333);
@@ -46,22 +47,20 @@
     border-radius: 100% 56% 56% 100% / 100% 100% 56% 56%;
   }
 }
-
-.hero__headline-wrapper {
-}
 .hero-wrapper {
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 40%;
+  top: 43%;
   left: 50%;
   width: max-content;
-  gap: 4rem;
+  gap: 2rem;
 }
 .hero__headline__inner-wrapper {
   gap: 0.3rem;
   margin-bottom: 1rem;
 }
 .hero__role {
+  position: relative;
   gap: 1rem;
 }
 .hero__green-text {
@@ -76,14 +75,12 @@
   font-size: 2.8rem;
   font-weight: 400;
 }
-.hero-cta {
-}
-
-.background-text {
+.hero__background-text {
   position: absolute;
-  color: rgba(255, 255, 255, 0.02);
+  color: hsla(0, 0%, 100%, 0.02);
   text-transform: uppercase;
   user-select: none;
+  z-index: -1;
 }
 .graphic-bg-text {
   font-size: clamp(6rem, 7vw, 8rem);
@@ -142,4 +139,74 @@
   to {
     transform: translateX(-50%);
   }
+}
+.scroll-down {
+  background: transparent;
+  position: absolute;
+  bottom: 8rem;
+  animation: scroll-down 1s ease-in-out alternate infinite;
+}
+@keyframes scroll-down {
+  from {
+    transform: translateY(15px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+/*/////////// OFFER SECTION  */
+
+.offer {
+}
+.offer-wrapper {
+  gap: 3rem;
+}
+.offer-banner {
+  position: relative;
+}
+.offer-banner__img-wrapper {
+}
+.offer__img {
+  height: 25vh;
+  width: 100%;
+}
+.offer-banner__body {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 5.5rem;
+  display: grid;
+  place-content: center;
+  height: 11vh;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.8) 60%
+  );
+  padding-block: 2rem;
+  width: min(80vw, 30rem);
+}
+
+/* ////////// SKILLSET SECTION */
+
+.skillset {
+  background-color: var(--neutral-900);
+}
+.skillset__header {
+  color: var(--white);
+}
+.skillset__skill-card-wrapper {
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 40rem;
+  margin-inline: auto;
+}
+.skill-card {
+  width: min(18vw, 80px);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.skill-card:hover {
+  scale: 1.3;
 }
