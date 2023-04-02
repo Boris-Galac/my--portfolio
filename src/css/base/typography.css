@@ -55,6 +55,10 @@ select {
 }
 .h3--heading {
 }
+.p-text {
+  font-weight: 200;
+  color: var(--white);
+}
 
 /* styled heading */
 

@@ -158,6 +158,9 @@
 /*/////////// OFFER SECTION  */
 
 .offer {
+  background-color: hsla(0, 0%, 0%, 0.05);
+  padding-top: 4rem;
+  padding-bottom: 6rem;
 }
 .offer-wrapper {
   gap: 3rem;
@@ -165,7 +168,17 @@
 .offer-banner {
   position: relative;
 }
-.offer-banner__img-wrapper {
+.offer-banner::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  z-index: 1;
+  inset: 0;
 }
 .offer__img {
   height: 25vh;
@@ -173,7 +186,7 @@
 }
 .offer-banner__body {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   right: 0;
   bottom: 5.5rem;
   display: grid;
@@ -181,7 +194,7 @@
   height: 11vh;
   background: linear-gradient(
     to right,
-    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.01) 2%,
     rgba(0, 0, 0, 0.8) 60%
   );
   padding-block: 2rem;
@@ -198,6 +211,7 @@
 }
 .skillset__skill-card-wrapper {
   flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
   max-width: 40rem;
   margin-inline: auto;
