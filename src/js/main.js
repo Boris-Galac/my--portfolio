@@ -7,4 +7,15 @@ var typed = new Typed(".auto-type", {
   loop: true,
 });
 
-console.log("javascript");
+////// SCROLL TO TOP
+
+window.addEventListener("scroll", (e) => {
+  const scroollBtn = document.querySelector(".scroll-to-top-btn");
+  if (window.scrollY > 100) scroollBtn.setAttribute("aria-hidden", "false");
+  else scroollBtn.setAttribute("aria-hidden", "true");
+  scroollBtn.addEventListener("click", (e) => {
+    window.scroll({
+      top: 0,
+    });
+  });
+});

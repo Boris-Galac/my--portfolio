@@ -5,14 +5,6 @@
   height: 100%;
   isolation: isolate;
 }
-.hero::after {
-  content: "";
-  position: absolute;
-  right: 0.7rem;
-  width: 1px;
-  height: 80%;
-  background-color: rgba(255, 255, 255, 0.333);
-}
 
 /* blob */
 
@@ -53,11 +45,14 @@
   top: 43%;
   left: 50%;
   width: max-content;
-  gap: 2rem;
+  gap: 10vw;
+}
+.flex-wrap {
+  display: flex;
+  flex-direction: column;
 }
 .hero__headline__inner-wrapper {
   gap: 0.3rem;
-  margin-bottom: 1rem;
 }
 .hero__role {
   position: relative;
@@ -69,10 +64,13 @@
 }
 .hero__main-headline {
   font-size: 3.5rem;
+  font-size: clamp(2.8rem, 6vw, 4.5rem);
+
   font-weight: 500;
 }
 .typing-text {
-  font-size: 2.8rem;
+  font-size: 3rem;
+  /* font-size: clamp(2.8rem, 6vw, 6rem); */
   font-weight: 400;
 }
 .hero__background-text {
@@ -156,9 +154,11 @@
 }
 
 @media (min-width: 60rem) {
-  .hero-wrapper .flex-col-center {
-    flex-wrap: wrap;
+  .flex-wrap {
     flex-direction: row;
+  }
+  .hero__headline-wrapper {
+    align-self: center;
   }
 }
 
@@ -174,6 +174,15 @@
 }
 .offer-banner {
   position: relative;
+}
+.offer-banner__icon {
+  left: 54px;
+  top: -18px;
+  width: min(20vw, 95px);
+  border-radius: 5px;
+  position: absolute;
+  z-index: 4;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.6);
 }
 .offer-banner::after {
   content: "";
@@ -211,7 +220,7 @@
 /* ////////// SKILLSET SECTION */
 
 .skillset {
-  background-color: var(--neutral-900);
+  background: linear-gradient(45deg, var(--black), transparent);
 }
 .skillset__header {
   color: var(--white);
@@ -220,7 +229,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  max-width: 40rem;
+  max-width: 25rem;
   margin-inline: auto;
 }
 .skill-card {
@@ -236,9 +245,16 @@
 
 .bio {
 }
+.bio .flex-wrap {
+  gap: min(10vw, 5rem);
+}
 .bio__contact-wrapper {
   background-color: var(--neutral-900);
   border-radius: 3px;
+}
+.bio__profile-img {
+  object-fit: contain;
+  max-width: 30rem;
 }
 .bio__contact {
   gap: 1rem;
@@ -256,7 +272,7 @@
 
 .socials {
   background-color: var(--neutral-900);
-  flex-wrap: wrap;
+  grid-template-rows: 1fr 1fr;
 }
 .socials__row:nth-child(2) {
   display: grid;
@@ -279,15 +295,16 @@
   scale: 1.1;
   border-bottom: 3px solid var(--neutral-700);
 }
-.socials__row {
-}
 .socials__row:nth-child(1) img {
   height: 100%;
+  width: 100%;
 }
 .socials__inner-wrapper {
   gap: 1rem;
 }
-.socials__contacts-box {
-}
-.socials__caption {
+@media (min-width: 50rem) {
+  .socials {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
 }

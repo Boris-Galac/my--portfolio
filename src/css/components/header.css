@@ -113,6 +113,7 @@ input:checked + .slider:before {
   top: -3.125rem;
   width: max-content;
   transform: translateX(-50%);
+  font-weight: 300;
   left: 50%;
   right: 0;
   padding: 4px;

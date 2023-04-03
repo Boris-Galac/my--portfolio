@@ -113,14 +113,14 @@
       <!-- HERO SECTION -->
       <section class="hero grid-center">
         <div class="container">
-          <div class="hero-wrapper d-flex">
+          <div class="hero-wrapper flex-wrap">
             <div
               class="blob"
               role="img"
               aria-label="Image of Boris Galac"
             ></div>
             <div class="hero__headline-wrapper d-grid">
-              <div class="hero__headline__inner-wrapper d-grid">
+              <div class="hero__headline__inner-wrapper d-grid mb-2">
                 <p class="hero__green-text flex-row-center">
                   🖐 Hi! My name is
                 </p>
@@ -133,7 +133,9 @@
                   >and I offer web and graphic solutions for you</span
                 >
               </div>
-              <button class="hero-cta primary-btn">explore my portfolio</button>
+              <button class="hero-cta primary-btn">
+                <a href="#offer">explore my portfolio</a>
+              </button>
             </div>
           </div>
         </div>
@@ -154,10 +156,14 @@
       <!-- OFFER SECTION -->
       <section class="section offer" id="offer">
         <div class="container">
-          <h2 class="h2--heading mb-2" data-shadow="what i do">what i do</h2>
+          <h2 class="h2--heading mb-4" data-shadow="what i do">what i do</h2>
           <div class="offer-wrapper d-grid">
             <figure class="offer-banner">
-              <div class="offer-banner__overlay"></div>
+              <img
+                src="/src/assets/icons/web-design-animated-icon.gif"
+                alt="web design icon"
+                class="offer-banner__icon"
+              />
               <img
                 class="offer__img"
                 src="/src/assets/images/offer-img-2.jpg"
@@ -174,11 +180,15 @@
               </div>
             </figure>
             <figure class="offer-banner">
-              <div class="offer-banner__img-wrapper"></div>
+              <img
+                src="/src/assets/icons/web-dev-animated-icon.gif"
+                alt="web dev icon"
+                class="offer-banner__icon"
+              />
               <img
                 class="offer__img"
                 src="/src/assets/images/offer-img-1.jpg"
-                alt="web design icon"
+                alt="web development"
               />
               <div class="offer-banner__body">
                 <h3 class="offer-banner__heading">web development</h3>
@@ -193,11 +203,15 @@
               </div>
             </figure>
             <figure class="offer-banner">
-              <div class="offer-banner__img-wrapper"></div>
+              <img
+                src="/src/assets/icons/graphic-design-animated-icon.gif"
+                alt="graphic design icon"
+                class="offer-banner__icon"
+              />
               <img
                 class="offer__img"
                 src="/src/assets/images/offer-img-3.jpg"
-                alt="web design icon"
+                alt="graphic design"
               />
               <div class="offer-banner__body">
                 <h3 class="offer-banner__heading">graphic design</h3>
@@ -320,55 +334,66 @@
       <section class="section bio">
         <div class="container">
           <h2 class="h2--heading mb-2" data-shadow="bio">bio</h2>
-          <img
-            src="/src/assets/images/bio__profile-img.png"
-            alt="Bio profile image - Boris Galac"
-            class="bio__profile-img mb-2"
-          />
-          <h3 class="h3--heading mb-2">Few words about me...</h3>
-          <div class="bio__text mb-2">
-            <p class="p-text">
-              Experienced UI/UX designer and developer with few years of
-              expertise in creating user-centered designs for web and mobile
-              apps.
-            </p>
-            <br />
-            <p class="p-text">
-              Proficient in design software such as Figma, Adobe XD, Sketch,
-              Figma. Also i have strong skill to translate design to proper and
-              efficient code and HTML, CSS, and JavaScript.
-            </p>
-            <br />
-            <p class="p-text">
-              Proven ability to deliver high-quality designs on time and
-              expertise in creating wireframes, mockups, and interactive
-              prototypes. Passionate about creating intuitive designs and
-              constantly seeking to improve my skills.
-            </p>
-            <br />
-            <p class="p-text">Thanks for reading. 😀</p>
-          </div>
-          <div class="bio__contact-wrapper p-2">
-            <div
-              class="bio__contact flex-row-center mb-1"
-              aria-label="gmail contact"
-              title="Gmail contact"
-            >
-              <img src="/src/assets/icons/gmail-icon.svg" alt="gmail icon" />
-              <p class="p-text">
-                <a href="mailto:boris.galac@gmail.com">boris.galac@gmail.com</a>
-              </p>
-            </div>
-            <div
-              class="bio__contact flex-row-center"
-              aria-label="facebook contact"
-              title="Facebook contact"
-            >
-              <img
-                src="/src/assets/icons/facebook-icon.svg"
-                alt="facebook icon"
-              />
-              <a href="facebook.com/boris.galac">facebook.com/boris.galac</a>
+          <div class="bio-wrapper flex-wrap">
+            <img
+              src="/src/assets/images/bio__profile-img.png"
+              alt="Bio profile image - Boris Galac"
+              class="bio__profile-img"
+            />
+            <div class="bio-wrapper__col">
+              <h3 class="h3--heading mb-2">Few words about me...</h3>
+              <div class="bio__text mb-2">
+                <p class="p-text">
+                  Experienced UI/UX designer and developer with few years of
+                  expertise in creating user-centered designs for web and mobile
+                  apps.
+                </p>
+                <br />
+                <p class="p-text">
+                  Proficient in design software such as Figma, Adobe XD, Sketch,
+                  Figma. Also i have strong skill to translate design to proper
+                  and efficient code and HTML, CSS, and JavaScript.
+                </p>
+                <br />
+                <p class="p-text">
+                  Proven ability to deliver high-quality designs on time and
+                  expertise in creating wireframes, mockups, and interactive
+                  prototypes. Passionate about creating intuitive designs and
+                  constantly seeking to improve my skills.
+                </p>
+                <br />
+                <p class="p-text">Thanks for reading. 😀</p>
+              </div>
+              <div class="bio__contact-wrapper p-2">
+                <div
+                  class="bio__contact flex-row-center mb-1"
+                  aria-label="gmail contact"
+                  title="Gmail contact"
+                >
+                  <img
+                    src="/src/assets/icons/gmail-icon.svg"
+                    alt="gmail icon"
+                  />
+                  <p class="p-text">
+                    <a href="mailto:boris.galac@gmail.com"
+                      >boris.galac@gmail.com</a
+                    >
+                  </p>
+                </div>
+                <div
+                  class="bio__contact flex-row-center"
+                  aria-label="facebook contact"
+                  title="Facebook contact"
+                >
+                  <img
+                    src="/src/assets/icons/facebook-icon.svg"
+                    alt="facebook icon"
+                  />
+                  <a href="facebook.com/boris.galac"
+                    >facebook.com/boris.galac</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -376,7 +401,7 @@
       <!------------->
 
       <!-- SOCIALS SECTION -->
-      <section class="socials d-flex">
+      <section class="socials d-grid">
         <div class="socials__row">
           <img
             src="/src/assets/images/socials-image.jpg"
@@ -445,7 +470,16 @@
       <!--------------------->
 
       <!-- FOOTER -->
-      <footer class="footer p-4">
+      <button
+        class="scroll-to-top-btn"
+        aria-hidden="true"
+        aria-label="back to top of the page"
+        title="Back to topd"
+      >
+        <img src="/src/assets/icons/arrow-up.svg" aria-hidden="true" />
+      </button>
+
+      <footer class="footer">
         <div class="container">
           <div class="footer-wrapper">
             <img
@@ -454,47 +488,47 @@
               class="footer__logo mb-2"
             />
             <nav class="footer__nav">
-              <ul class="footer__nav-list d-grid">
-                <li class="footer__nav-item">
+              <ul class="footer__nav-list d-flex">
+                <li class="footer__nav-item" title="Home">
                   <img
                     src="/src/assets/icons/header-icons/desktop/home-icon.svg"
                     alt="home icon"
-                  /><a href="#">Naslovna</a>
+                  /><a href="#">Home</a>
                 </li>
-                <li class="footer__nav-item">
+                <li class="footer__nav-item" title="Web Design">
                   <img
                     src="/src/assets/icons/header-icons/desktop/design-icon.svg"
-                    alt="home icon"
+                    alt="Web Design"
                   /><a href="#">Web Design</a>
                 </li>
-                <li class="footer__nav-item">
+                <li class="footer__nav-item" title="Web Development">
                   <img
                     src="/src/assets/icons/header-icons/desktop/dev-icon.svg"
-                    alt="home icon"
+                    alt="Web Development"
                   /><a href="#">Web Development</a>
                 </li>
-                <li class="footer__nav-item">
+                <li class="footer__nav-item" title="Graphic Design">
                   <img
                     src="/src/assets/icons/header-icons/desktop/graphic-design-icon.svg"
-                    alt="home icon"
+                    alt="Graphic Design"
                   /><a href="#">Graphic Design</a>
                 </li>
-                <li class="footer__nav-item">
+                <li class="footer__nav-item" title="Blog">
                   <img
                     src="/src/assets/icons/header-icons/desktop/blog-icon.svg"
-                    alt="home icon"
+                    alt="Blog"
                   /><a href="#">Blog</a>
                 </li>
-                <li class="footer__nav-item">
+                <li class="footer__nav-item" title="Bio">
                   <img
                     src="/src/assets/icons/header-icons/desktop/profile-icon.svg"
-                    alt="home icon"
+                    alt="Bio"
                   /><a href="#">Bio</a>
                 </li>
-                <li class="footer__nav-item">
+                <li class="footer__nav-item" title="Contact">
                   <img
                     src="/src/assets/icons/header-icons/desktop/phone-icon.svg"
-                    alt="home icon"
+                    alt="Contact"
                   /><a href="#">Contact</a>
                 </li>
               </ul>
