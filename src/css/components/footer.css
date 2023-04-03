@@ -1,0 +1,27 @@
+.footer {
+  background-color: var(--black);
+}
+.footer__nav-list {
+  gap: 1rem;
+}
+.footer__nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer__nav-item a {
+  font-weight: 300;
+}
+.footer__line {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(240, 248, 255, 0.235);
+  margin-inline: auto;
+}
+.footer__nav-list:hover .footer__nav-item {
+  transition: 0.2s;
+  opacity: 0.6;
+}
+.footer__nav-list .footer__nav-item:hover {
+  opacity: 1;
+}

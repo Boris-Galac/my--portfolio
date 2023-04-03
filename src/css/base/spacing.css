@@ -4,6 +4,15 @@
 .p-1 {
   padding: 1rem;
 }
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+.p-4 {
+  padding: 4rem;
+}
 .px-05 {
   padding-inline: 0.5rem;
 }
@@ -12,6 +21,15 @@
 }
 .mx-1 {
   margin-inline: 1rem;
+}
+.my-1 {
+  margin-block: 1rem;
+}
+.my-2 {
+  margin-block: 2rem;
+}
+.mb-1 {
+  margin-bottom: 1rem;
 }
 .mb-2 {
   margin-bottom: 2rem;

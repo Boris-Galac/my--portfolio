@@ -54,10 +54,14 @@ select {
   }
 }
 .h3--heading {
+  font-size: 2rem;
+  line-height: 120%;
 }
 .p-text {
   font-weight: 200;
   color: var(--white);
+  line-height: 180%;
+  letter-spacing: 1px;
 }
 
 /* styled heading */

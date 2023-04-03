@@ -27,7 +27,7 @@
     <header class="header">
       <nav class="nav p-05 px-1">
         <ul class="nav__list flex-row-center">
-          <li class="nav__item">
+          <li class="nav__item" data-title="Web Design">
             <a href="#" class="nav__link" aria-label="web design"
               ><img
                 src="/src/assets/icons/header-icons/mobile/design-icon.svg"
@@ -35,7 +35,7 @@
                 alt="web design link"
             /></a>
           </li>
-          <li class="nav__item">
+          <li class="nav__item" data-title="Web Development">
             <a href="#" class="nav__link" aria-label="web development"
               ><img
                 src="/src/assets/icons/header-icons/mobile/dev-icon.svg"
@@ -43,7 +43,7 @@
                 alt="web development link"
             /></a>
           </li>
-          <li class="nav__item">
+          <li class="nav__item" data-title="Graphic Design">
             <a href="#" class="nav__link" aria-label="graphic design"
               ><img
                 src="/src/assets/icons/header-icons/mobile/graphic-design-icon.svg"
@@ -51,7 +51,7 @@
                 alt="graphic design link"
             /></a>
           </li>
-          <li class="nav__item">
+          <li class="nav__item" data-title="Home">
             <a href="#" class="nav__link" aria-label="home"
               ><img
                 src="/src/assets/icons/header-icons/mobile/home-icon.svg"
@@ -59,7 +59,7 @@
                 alt="home link"
             /></a>
           </li>
-          <li class="nav__item">
+          <li class="nav__item" data-title="Blog">
             <a href="#" class="nav__link" aria-label="blog"
               ><img
                 src="/src/assets/icons/header-icons/mobile/blog-icon.svg"
@@ -67,16 +67,16 @@
                 alt="blog link"
             /></a>
           </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link" aria-label="profile"
+          <li class="nav__item" data-title="Bio">
+            <a href="#" class="nav__link" aria-label="Bio"
               ><img
                 src="/src/assets/icons/header-icons/mobile/profile-icon.svg"
                 aria-hidden="true"
                 alt="profile link"
             /></a>
           </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link" aria-label="phone"
+          <li class="nav__item" data-title="Contact">
+            <a href="#" class="nav__link" aria-label="Contact"
               ><img
                 src="/src/assets/icons/header-icons/mobile/phone-icon.svg"
                 aria-hidden="true"
@@ -111,10 +111,9 @@
     </header>
     <main class="main">
       <!-- HERO SECTION -->
-
       <section class="hero grid-center">
         <div class="container">
-          <div class="hero-wrapper d-grid">
+          <div class="hero-wrapper d-flex">
             <div
               class="blob"
               role="img"
@@ -150,13 +149,12 @@
           /></a>
         </button>
       </section>
-
       <!------------->
-      <!-- OFFER SECTION -->
 
-      <section class="offer" id="offer">
+      <!-- OFFER SECTION -->
+      <section class="section offer" id="offer">
         <div class="container">
-          <h2 class="h2--heading mb-4" data-shadow="what i do">what i do</h2>
+          <h2 class="h2--heading mb-2" data-shadow="what i do">what i do</h2>
           <div class="offer-wrapper d-grid">
             <figure class="offer-banner">
               <div class="offer-banner__overlay"></div>
@@ -216,10 +214,9 @@
           </div>
         </div>
       </section>
-
       <!------------->
-      <!-- SKILLSET SECTION -->
 
+      <!-- SKILLSET SECTION -->
       <section class="skillset py-4">
         <div class="container">
           <div class="skillset__header mb-2">
@@ -317,15 +314,199 @@
           </div>
         </div>
       </section>
-
       <!------------->
-      <!-- BIO SECTION -->
 
-      <section class="bio">
+      <!-- BIO SECTION -->
+      <section class="section bio">
         <div class="container">
           <h2 class="h2--heading mb-2" data-shadow="bio">bio</h2>
+          <img
+            src="/src/assets/images/bio__profile-img.png"
+            alt="Bio profile image - Boris Galac"
+            class="bio__profile-img mb-2"
+          />
+          <h3 class="h3--heading mb-2">Few words about me...</h3>
+          <div class="bio__text mb-2">
+            <p class="p-text">
+              Experienced UI/UX designer and developer with few years of
+              expertise in creating user-centered designs for web and mobile
+              apps.
+            </p>
+            <br />
+            <p class="p-text">
+              Proficient in design software such as Figma, Adobe XD, Sketch,
+              Figma. Also i have strong skill to translate design to proper and
+              efficient code and HTML, CSS, and JavaScript.
+            </p>
+            <br />
+            <p class="p-text">
+              Proven ability to deliver high-quality designs on time and
+              expertise in creating wireframes, mockups, and interactive
+              prototypes. Passionate about creating intuitive designs and
+              constantly seeking to improve my skills.
+            </p>
+            <br />
+            <p class="p-text">Thanks for reading. 😀</p>
+          </div>
+          <div class="bio__contact-wrapper p-2">
+            <div
+              class="bio__contact flex-row-center mb-1"
+              aria-label="gmail contact"
+              title="Gmail contact"
+            >
+              <img src="/src/assets/icons/gmail-icon.svg" alt="gmail icon" />
+              <p class="p-text">
+                <a href="mailto:boris.galac@gmail.com">boris.galac@gmail.com</a>
+              </p>
+            </div>
+            <div
+              class="bio__contact flex-row-center"
+              aria-label="facebook contact"
+              title="Facebook contact"
+            >
+              <img
+                src="/src/assets/icons/facebook-icon.svg"
+                alt="facebook icon"
+              />
+              <a href="facebook.com/boris.galac">facebook.com/boris.galac</a>
+            </div>
+          </div>
         </div>
       </section>
+      <!------------->
+
+      <!-- SOCIALS SECTION -->
+      <section class="socials d-flex">
+        <div class="socials__row">
+          <img
+            src="/src/assets/images/socials-image.jpg"
+            alt="socials generic image"
+          />
+        </div>
+        <div class="socials__row py-4 px-1">
+          <div class="socials__contacts">
+            <p class="p-text mb-1">Feel free to visit my other work on</p>
+            <div class="socials__inner-wrapper d-flex">
+              <a
+                href="https://codepen.io/boris-galac"
+                target="_blank"
+                aria-label="Link to Codepen profile"
+                tabindex="0"
+              >
+                <figure class="socials__contacts-box grid-center">
+                  <img
+                    src="/src/assets/icons/codepen-icon.svg"
+                    alt="codepen icon"
+                    class="mb-1"
+                  />
+                  <figcaption class="socials__caption p-text">
+                    Codepen
+                  </figcaption>
+                </figure>
+              </a>
+              <a
+                href="https://github.com/Boris-Galac?tab=repositories"
+                target="_blank"
+                aria-label="Link to Github profile"
+                tabindex="0"
+              >
+                <figure class="socials__contacts-box grid-center">
+                  <img
+                    src="/src/assets/icons/github-icon.svg"
+                    alt="github icon"
+                    class="mb-1"
+                  />
+                  <figcaption class="socials__caption p-text">
+                    Github
+                  </figcaption>
+                </figure>
+              </a>
+              <a
+                href="https://dribbble.com/Boris_88"
+                target="_blank"
+                aria-label="Link to Dribbble profile"
+                tabindex="0"
+              >
+                <figure class="socials__contacts-box grid-center">
+                  <img
+                    src="/src/assets/icons/dribbble-icon.svg"
+                    alt="dribbble icon"
+                    class="mb-1"
+                  />
+                  <figcaption class="socials__caption p-text">
+                    Dribbble
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--------------------->
+
+      <!-- FOOTER -->
+      <footer class="footer p-4">
+        <div class="container">
+          <div class="footer-wrapper">
+            <img
+              src="/src/assets/icons/header-icons/galac-logo.svg"
+              alt="footer logo"
+              class="footer__logo mb-2"
+            />
+            <nav class="footer__nav">
+              <ul class="footer__nav-list d-grid">
+                <li class="footer__nav-item">
+                  <img
+                    src="/src/assets/icons/header-icons/desktop/home-icon.svg"
+                    alt="home icon"
+                  /><a href="#">Naslovna</a>
+                </li>
+                <li class="footer__nav-item">
+                  <img
+                    src="/src/assets/icons/header-icons/desktop/design-icon.svg"
+                    alt="home icon"
+                  /><a href="#">Web Design</a>
+                </li>
+                <li class="footer__nav-item">
+                  <img
+                    src="/src/assets/icons/header-icons/desktop/dev-icon.svg"
+                    alt="home icon"
+                  /><a href="#">Web Development</a>
+                </li>
+                <li class="footer__nav-item">
+                  <img
+                    src="/src/assets/icons/header-icons/desktop/graphic-design-icon.svg"
+                    alt="home icon"
+                  /><a href="#">Graphic Design</a>
+                </li>
+                <li class="footer__nav-item">
+                  <img
+                    src="/src/assets/icons/header-icons/desktop/blog-icon.svg"
+                    alt="home icon"
+                  /><a href="#">Blog</a>
+                </li>
+                <li class="footer__nav-item">
+                  <img
+                    src="/src/assets/icons/header-icons/desktop/profile-icon.svg"
+                    alt="home icon"
+                  /><a href="#">Bio</a>
+                </li>
+                <li class="footer__nav-item">
+                  <img
+                    src="/src/assets/icons/header-icons/desktop/phone-icon.svg"
+                    alt="home icon"
+                  /><a href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="footer__line my-2" aria-hidden="true"></div>
+            <p class="p-text text-center footer__copyright mb-4">
+              Copyright &#169; 2023 - All Rights Reserved. Website kreirao i
+              uredio Boris Galac
+            </p>
+          </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
