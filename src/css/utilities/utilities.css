@@ -88,3 +88,10 @@
 .see-more-link:hover img {
   transform: translateX(5px);
 }
+
+.work-main {
+  padding-top: 10rem;
+}
+.order-2 {
+  order: 2;
+}

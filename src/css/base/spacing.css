@@ -19,6 +19,12 @@
 .px-1 {
   padding-inline: 1rem;
 }
+.py-4 {
+  padding-block: 4rem;
+}
+.py-6 {
+  padding-block: 6rem;
+}
 .mx-1 {
   margin-inline: 1rem;
 }
@@ -40,9 +46,6 @@
 .mb-4 {
   margin-bottom: 4rem;
 }
-.py-4 {
-  padding-block: 4rem;
-}
-.py-6 {
-  padding-block: 6rem;
+.mb-8 {
+  margin-bottom: 8rem;
 }

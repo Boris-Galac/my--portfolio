@@ -28,7 +28,7 @@
       <nav class="nav p-05 px-1">
         <ul class="nav__list flex-row-center">
           <li class="nav__item" data-title="Web Design">
-            <a href="#" class="nav__link" aria-label="web design"
+            <a href="web-design.html" class="nav__link" aria-label="web design"
               ><img
                 src="/src/assets/icons/header-icons/mobile/design-icon.svg"
                 aria-hidden="true"
@@ -52,7 +52,7 @@
             /></a>
           </li>
           <li class="nav__item" data-title="Home">
-            <a href="#" class="nav__link" aria-label="home"
+            <a href="index.html" class="nav__link" aria-label="home"
               ><img
                 src="/src/assets/icons/header-icons/mobile/home-icon.svg"
                 aria-hidden="true"
@@ -109,11 +109,11 @@
         </div>
       </div>
     </header>
-    <main class="main">
+    <main class="main home-main">
       <!-- HERO SECTION -->
       <section class="hero grid-center">
         <div class="container">
-          <div class="hero-wrapper flex-wrap">
+          <div class="hero__wrapper flex-wrap">
             <div
               class="blob"
               role="img"
@@ -157,7 +157,7 @@
       <section class="section offer" id="offer">
         <div class="container">
           <h2 class="h2--heading mb-4" data-shadow="what i do">what i do</h2>
-          <div class="offer-wrapper d-grid">
+          <div class="offer__wrapper d-grid">
             <figure class="offer-banner">
               <img
                 src="/src/assets/icons/web-design-animated-icon.gif"
@@ -176,7 +176,8 @@
                   <img
                     src="/src/assets/icons/see-more-arrow-icon.svg"
                     aria-hidden="true"
-                /></a>
+                  />
+                </a>
               </div>
             </figure>
             <figure class="offer-banner">
@@ -334,7 +335,7 @@
       <section class="section bio">
         <div class="container">
           <h2 class="h2--heading mb-2" data-shadow="bio">bio</h2>
-          <div class="bio-wrapper flex-wrap">
+          <div class="bio__wrapper flex-wrap">
             <img
               src="/src/assets/images/bio__profile-img.png"
               alt="Bio profile image - Boris Galac"
@@ -468,79 +469,79 @@
         </div>
       </section>
       <!--------------------->
-
-      <!-- FOOTER -->
-      <button
-        class="scroll-to-top-btn"
-        aria-hidden="true"
-        aria-label="back to top of the page"
-        title="Back to topd"
-      >
-        <img src="/src/assets/icons/arrow-up.svg" aria-hidden="true" />
-      </button>
-
-      <footer class="footer">
-        <div class="container">
-          <div class="footer-wrapper">
-            <img
-              src="/src/assets/icons/header-icons/galac-logo.svg"
-              alt="footer logo"
-              class="footer__logo mb-2"
-            />
-            <nav class="footer__nav">
-              <ul class="footer__nav-list d-flex">
-                <li class="footer__nav-item" title="Home">
-                  <img
-                    src="/src/assets/icons/header-icons/desktop/home-icon.svg"
-                    alt="home icon"
-                  /><a href="#">Home</a>
-                </li>
-                <li class="footer__nav-item" title="Web Design">
-                  <img
-                    src="/src/assets/icons/header-icons/desktop/design-icon.svg"
-                    alt="Web Design"
-                  /><a href="#">Web Design</a>
-                </li>
-                <li class="footer__nav-item" title="Web Development">
-                  <img
-                    src="/src/assets/icons/header-icons/desktop/dev-icon.svg"
-                    alt="Web Development"
-                  /><a href="#">Web Development</a>
-                </li>
-                <li class="footer__nav-item" title="Graphic Design">
-                  <img
-                    src="/src/assets/icons/header-icons/desktop/graphic-design-icon.svg"
-                    alt="Graphic Design"
-                  /><a href="#">Graphic Design</a>
-                </li>
-                <li class="footer__nav-item" title="Blog">
-                  <img
-                    src="/src/assets/icons/header-icons/desktop/blog-icon.svg"
-                    alt="Blog"
-                  /><a href="#">Blog</a>
-                </li>
-                <li class="footer__nav-item" title="Bio">
-                  <img
-                    src="/src/assets/icons/header-icons/desktop/profile-icon.svg"
-                    alt="Bio"
-                  /><a href="#">Bio</a>
-                </li>
-                <li class="footer__nav-item" title="Contact">
-                  <img
-                    src="/src/assets/icons/header-icons/desktop/phone-icon.svg"
-                    alt="Contact"
-                  /><a href="#">Contact</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="footer__line my-2" aria-hidden="true"></div>
-            <p class="p-text text-center footer__copyright mb-4">
-              Copyright &#169; 2023 - All Rights Reserved. Website kreirao i
-              uredio Boris Galac
-            </p>
-          </div>
-        </div>
-      </footer>
     </main>
+
+    <!-- FOOTER -->
+    <button
+      class="scroll-to-top-btn"
+      aria-hidden="true"
+      aria-label="back to top of the page"
+      title="Back to topd"
+    >
+      <img src="/src/assets/icons/arrow-up.svg" aria-hidden="true" />
+    </button>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <img
+            src="/src/assets/icons/header-icons/galac-logo.svg"
+            alt="footer logo"
+            class="footer__logo mb-2"
+          />
+          <nav class="footer__nav">
+            <ul class="footer__nav-list d-flex">
+              <li class="footer__nav-item" title="Home">
+                <img
+                  src="/src/assets/icons/header-icons/desktop/home-icon.svg"
+                  alt="home icon"
+                /><a href="#">Home</a>
+              </li>
+              <li class="footer__nav-item" title="Web Design">
+                <img
+                  src="/src/assets/icons/header-icons/desktop/design-icon.svg"
+                  alt="Web Design"
+                /><a href="#">Web Design</a>
+              </li>
+              <li class="footer__nav-item" title="Web Development">
+                <img
+                  src="/src/assets/icons/header-icons/desktop/dev-icon.svg"
+                  alt="Web Development"
+                /><a href="#">Web Development</a>
+              </li>
+              <li class="footer__nav-item" title="Graphic Design">
+                <img
+                  src="/src/assets/icons/header-icons/desktop/graphic-design-icon.svg"
+                  alt="Graphic Design"
+                /><a href="#">Graphic Design</a>
+              </li>
+              <li class="footer__nav-item" title="Blog">
+                <img
+                  src="/src/assets/icons/header-icons/desktop/blog-icon.svg"
+                  alt="Blog"
+                /><a href="#">Blog</a>
+              </li>
+              <li class="footer__nav-item" title="Bio">
+                <img
+                  src="/src/assets/icons/header-icons/desktop/profile-icon.svg"
+                  alt="Bio"
+                /><a href="#">Bio</a>
+              </li>
+              <li class="footer__nav-item" title="Contact">
+                <img
+                  src="/src/assets/icons/header-icons/desktop/phone-icon.svg"
+                  alt="Contact"
+                /><a href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__line my-2" aria-hidden="true"></div>
+          <p class="p-text text-center footer__copyright mb-4">
+            Copyright &#169; 2023 - All Rights Reserved. Website kreirao i
+            uredio; Boris Galac.
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

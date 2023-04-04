@@ -1,0 +1,41 @@
+.my-work {
+  padding-block: 8rem;
+  clip-path: polygon(0% 2%, 100% 0, 100% 100%, 0% 100%);
+}
+.work__row {
+  position: relative;
+  isolation: isolate;
+  gap: 2rem;
+}
+.work-wrapper {
+  gap: 6rem;
+}
+.work__row::after {
+  content: "";
+  position: absolute;
+  background-color: hsl(210, 30%, 20%);
+  inset: 0;
+  width: 75%;
+  top: 5rem;
+  z-index: -1;
+}
+@media (min-width: 46.938rem) {
+  .my-work {
+    clip-path: polygon(0% 7%, 100% 0, 100% 100%, 0% 100%);
+  }
+  .work__row {
+    grid-auto-flow: column;
+  }
+}
+
+/*////////// MY WORK SECTION */
+
+.my-work {
+  background-color: var(--neutral-900);
+}
+.my-work__wrapper {
+}
+.my-work__inner-wrapper {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}

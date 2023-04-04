@@ -13,10 +13,13 @@
 
 @import "components/header.css";
 @import "components/footer.css";
+@import "components/banner.css";
+@import "components/card.css";
 
 /* page */
 
 @import "pages/front-page.css";
+@import "pages/web-design-page.css";
 
 /* layout */
 

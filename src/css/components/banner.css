@@ -1,0 +1,47 @@
+.banner {
+  position: relative;
+  width: 80vw;
+  right: 0;
+  left: 20%;
+}
+.banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    60deg,
+    hsla(0, 0%, 0%, 0.1) 0%,
+    hsla(0, 0%, 0%, 0.8) 100%
+  );
+  /* z-index: 3; */
+}
+.banner-wrapper {
+  /* position: absolute;
+        background: #000;
+        width: 100%;
+        height: 100%; */
+}
+.banner__video {
+  height: 35vh;
+  width: 100%;
+  inset: 0;
+}
+.banner__heading {
+  position: absolute;
+  bottom: 0;
+  left: -3rem;
+  font-size: clamp(3rem, 7vw, 7rem);
+  z-index: 5;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.banner__heading::after {
+  content: attr(data-subheading);
+  position: absolute;
+  bottom: -1rem;
+  font-size: inherit;
+  left: -2rem;
+  letter-spacing: 1rem;
+  width: max-content;
+  color: hsla(0, 0%, 100%, 0.1);
+}

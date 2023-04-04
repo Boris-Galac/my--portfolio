@@ -39,7 +39,7 @@
     border-radius: 100% 56% 56% 100% / 100% 100% 56% 56%;
   }
 }
-.hero-wrapper {
+.hero__wrapper {
   position: absolute;
   transform: translate(-50%, -50%);
   top: 43%;
@@ -169,11 +169,12 @@
   padding-top: 4rem;
   padding-bottom: 6rem;
 }
-.offer-wrapper {
+.offer__wrapper {
   gap: 3rem;
 }
 .offer-banner {
   position: relative;
+  height: 25vh;
 }
 .offer-banner__icon {
   left: 54px;
@@ -183,6 +184,12 @@
   position: absolute;
   z-index: 4;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.6);
+}
+.offer__video-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
 }
 .offer-banner::after {
   content: "";
@@ -243,8 +250,6 @@
 
 /* ////////// BIO SECTION */
 
-.bio {
-}
 .bio .flex-wrap {
   gap: min(10vw, 5rem);
 }
