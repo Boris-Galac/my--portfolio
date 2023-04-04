@@ -13,8 +13,7 @@
   width: min(70vw, 400px);
   overflow: hidden;
   border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
-  background: url("https://i.postimg.cc/7PBzjpdX/avatar.png") no-repeat center
-    center/cover;
+  background: url("/src/assets/images/avatar.png") no-repeat center center/cover;
   box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.2);
   animation: blob 3.7s linear infinite;
   margin: auto;

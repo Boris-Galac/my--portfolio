@@ -110,3 +110,35 @@ select {
   font-weight: 200;
   font-size: 1.5rem;
 }
+.banner__heading {
+  position: absolute;
+  bottom: 0;
+  left: -3rem;
+  font-size: clamp(3rem, 7vw, 7rem);
+  z-index: 5;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: 600;
+  user-select: none;
+}
+.banner__heading::after {
+  content: attr(data-subheading);
+  position: absolute;
+  bottom: -1rem;
+  font-size: inherit;
+  left: -2rem;
+  letter-spacing: 1rem;
+  width: max-content;
+  color: hsla(0, 0%, 100%, 0.1);
+  animation: banner-heading 6s alternate infinite ease-in-out;
+}
+@keyframes banner-heading {
+  from {
+    transform: translateX(-15%);
+    letter-spacing: 9px;
+  }
+  to {
+    transform: translateX(15%);
+    letter-spacing: 0;
+  }
+}
