@@ -1,0 +1,33 @@
+.blog-main {
+}
+.blog-main .banner::after {
+  background: none !important;
+}
+.blog {
+}
+.blog__body {
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.blog__wrapper {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 2rem;
+  row-gap: 3rem;
+}
+
+@media (min-width: 36rem) {
+  .blog__body {
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+}
+
+/* SINGLE BLOG PAGE */
+
+.single-blog-main {
+}
+.single-blog__heading {
+  text-transform: capitalize;
+}
+.single-blog__wrapper {
+}

@@ -34,6 +34,9 @@
 .my-2 {
   margin-block: 2rem;
 }
+.mb-05 {
+  margin-bottom: 0.5rem;
+}
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -48,4 +51,10 @@
 }
 .mb-8 {
   margin-bottom: 8rem;
+}
+.gap-1 {
+  gap: 1rem;
+}
+.gap-2 {
+  gap: 2rem;
 }

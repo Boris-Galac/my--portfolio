@@ -21,3 +21,21 @@ window.addEventListener("scroll", (e) => {
     });
   });
 });
+
+/////// OVERLAY
+
+const searchBtn = document.querySelector(".top-bar__search");
+const searchForm = document.querySelector(".search__form");
+const overlay = document.querySelector(".overlay");
+
+searchBtn.addEventListener("click", (e) => {
+  if (overlay.getAttribute("aria-hidden") === "true") {
+    overlay.setAttribute("aria-hidden", "false");
+  }
+  searchForm.setAttribute("aria-hidden", "false");
+});
+
+overlay.addEventListener("click", (e) => {
+  overlay.setAttribute("aria-hidden", "true");
+  searchForm.setAttribute("aria-hidden", "true");
+});

@@ -1,3 +1,6 @@
+.web-des-main {
+  background: var(--web-des-clr);
+}
 .my-work {
   padding-block: 8rem;
   clip-path: polygon(0% 2%, 100% 0, 100% 100%, 0% 100%);
@@ -13,7 +16,7 @@
 .work__row::after {
   content: "";
   position: absolute;
-  background-color: hsl(210, 30%, 20%);
+  background-color: var(--work-row-clr);
   inset: 0;
   width: 75%;
   top: 5rem;
@@ -32,8 +35,6 @@
 
 .my-work {
   background-color: var(--neutral-900);
-}
-.my-work__wrapper {
 }
 .my-work__inner-wrapper {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

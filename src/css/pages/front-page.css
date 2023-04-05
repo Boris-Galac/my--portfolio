@@ -5,7 +5,9 @@
   height: 100%;
   isolation: isolate;
 }
-
+.main {
+  /* background-color: var(--home-page-clr); */
+}
 /* blob */
 
 .blob {
@@ -69,7 +71,6 @@
 }
 .typing-text {
   font-size: 3rem;
-  /* font-size: clamp(2.8rem, 6vw, 6rem); */
   font-weight: 400;
 }
 .hero__background-text {
@@ -164,7 +165,7 @@
 /*/////////// OFFER SECTION  */
 
 .offer {
-  background-color: hsla(0, 0%, 0%, 0.05);
+  background-color: hsla(0, 0%, 0%, 0.15);
   padding-top: 4rem;
   padding-bottom: 6rem;
 }

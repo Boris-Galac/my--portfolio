@@ -1,1 +1,13 @@
 /* card */
+
+.web-dev-main {
+  background: var(--web-dev-clr);
+}
+.web-dev--banner {
+  width: 150vw;
+}
+@media (min-width: 48rem) {
+  .web-dev--banner {
+    width: 80vw;
+  }
+}

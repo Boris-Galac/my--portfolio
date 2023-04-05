@@ -88,16 +88,16 @@
 .see-more-link:hover img {
   transform: translateX(5px);
 }
-
-.work-main {
-  padding-top: 10rem;
+.pt-7 {
+  padding-top: 7rem;
 }
 .order-2 {
   order: 2;
 }
-.web-dev-clr {
-  background-color: rgb(17, 28, 49);
-}
-.graphic-des-clr {
-  background-color: rgb(24, 21, 26);
+.excerpt--text {
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  grid-row: 2;
 }

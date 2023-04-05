@@ -1,6 +1,7 @@
 .banner {
   position: relative;
   width: 80vw;
+  height: 28vh;
   right: 0;
   left: 20%;
   user-select: none;
@@ -16,8 +17,11 @@
   );
   user-select: none;
 }
+.banner-wrapper img {
+  height: 100%;
+}
 .banner__video {
-  height: 35vh;
   width: 100%;
+  height: 100%;
   inset: 0;
 }

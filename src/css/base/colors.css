@@ -21,4 +21,21 @@
   --neutral-800: #1e2b38;
   --neutral-900: #0f161d;
   --green-text: hsl(120, 67%, 70%);
+  --home-page-clr: hsl(208, 19%, 13%);
+  --web-des-clr: linear-gradient(
+    140deg,
+    hsl(189, 32%, 13%),
+    hsl(189, 14%, 37%)
+  );
+  --web-dev-clr: linear-gradient(
+    140deg,
+    hsl(219, 48%, 13%),
+    hsl(219, 48%, 33%)
+  );
+  --graph-des-clr: linear-gradient(
+    140deg,
+    hsl(276, 11%, 9%),
+    hsl(276, 11%, 29%)
+  );
+  --work-row-clr: hsl(0deg 0% 0% / 13%);
 }

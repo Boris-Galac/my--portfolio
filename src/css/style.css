@@ -15,12 +15,17 @@
 @import "components/footer.css";
 @import "components/banner.css";
 @import "components/card.css";
+@import "components/sidebar.css";
+@import "components/search.css";
 
 /* page */
 
 @import "pages/front-page.css";
 @import "pages/web-design-page.css";
 @import "pages/web-development-page.css";
+@import "pages/graphic-design-page.css";
+@import "pages/blog-page.css";
+@import "pages/bio-page.css";
 
 /* layout */
 
