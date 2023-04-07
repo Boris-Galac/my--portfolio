@@ -156,3 +156,50 @@
   background-color: hsl(223, 20%, 76%);
   transition: 0.3s;
 }
+
+/*/////////// CONTACT SOCIALS CARD  */
+
+.contact-socials__card {
+  background-color: transparent;
+  aspect-ratio: 3/4;
+  width: 17rem;
+  display: grid;
+  place-items: center;
+  perspective: 1000px;
+}
+.contact-socials__card-inner-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 6px 32px rgba(0, 0, 0, 0.5);
+}
+.contact-socials__card:hover .contact-socials__card-inner-wrapper {
+  transform: rotateY(180deg);
+}
+.contact-socials__card-front,
+.contact-socials__card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3rem;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+.contact-socials__card-front {
+  background-color: var(--neutral-900);
+}
+.contact-socials__card-back {
+  position: relative;
+  background-color: var(--neutral-800);
+  transform: rotateY(180deg);
+}
+.contact-socials__card-back::after {
+  column-width: "";
+  position: absolute;
+}

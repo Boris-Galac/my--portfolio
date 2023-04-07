@@ -1,0 +1,31 @@
+.contact-main {
+  position: relative;
+  isolation: isolate;
+}
+.contact-main::after {
+  content: "";
+  position: absolute;
+  background: url("/src/assets/images/contact-page-img-background.png")
+    no-repeat center center/cover;
+  background-attachment: fixed;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: -1;
+}
+.contact {
+}
+.contact__wrapper {
+  flex-wrap: wrap;
+}
+.contact__row {
+  flex: 1;
+}
+.contact__row .p-text {
+}
+.contact-socials {
+}
+.contact-socials__wrapper {
+  flex-wrap: wrap;
+}

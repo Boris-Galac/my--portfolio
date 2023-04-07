@@ -17,6 +17,7 @@
 @import "components/card.css";
 @import "components/sidebar.css";
 @import "components/search.css";
+@import "components/contact-form.css";
 
 /* page */
 
@@ -26,6 +27,7 @@
 @import "pages/graphic-design-page.css";
 @import "pages/blog-page.css";
 @import "pages/bio-page.css";
+@import "pages/contact-page.css";
 
 /* layout */
 

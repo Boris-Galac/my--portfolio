@@ -1,0 +1,89 @@
+.banner img {
+  object-position: 32%;
+}
+.bio .h2--heading {
+  text-transform: capitalize;
+  line-height: 1;
+}
+.bio-row {
+  position: relative;
+  isolation: isolate;
+}
+.bio-row::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.04);
+  border-radius: 3px;
+  inset: 0;
+  z-index: -1;
+}
+.bio-row-1 img {
+  max-width: 20rem;
+}
+.bio-row-2 {
+  gap: 4rem;
+}
+.bio-row-2__img-wrapper {
+  position: relative;
+  height: 26vh;
+  aspect-ratio: 1/2;
+  width: 18rem;
+}
+.bio-row-2__img-wrapper > img {
+  position: absolute;
+}
+.bio-row-2__img-wrapper > img:nth-child(2) {
+  right: 0;
+  top: 30%;
+  width: 50%;
+}
+.bio-row-2__img-wrapper > img:nth-child(3) {
+  bottom: -8%;
+}
+.bio__contact-me {
+  position: relative;
+  background-color: var(--neutral-900);
+  border-radius: 5px;
+  flex-wrap: wrap;
+  isolation: isolate;
+  width: min(80vw, 40rem);
+}
+.bio__contact-me p {
+  font-size: 1.2rem;
+}
+.bio__contact-me::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/src/assets/images/background-contact-me.png") no-repeat;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+@media (min-width: 60rem) {
+  .bio-row:not(:nth-of-type(3)) {
+    grid-template-columns: auto 1fr;
+    gap: 3rem;
+  }
+  .bio-row-2__img-wrapper {
+    position: relative;
+    height: 26vh;
+    width: 28rem;
+  }
+  .bio-row-2__img-wrapper > img {
+    position: absolute;
+  }
+  .bio-row-2__img-wrapper > img:nth-child(2) {
+    right: 0;
+    top: 30%;
+    width: 50%;
+  }
+  .bio-row-2__img-wrapper > img:nth-child(3) {
+    bottom: -8%;
+  }
+  .bio-row-2__img-wrapper > img:nth-child(4) {
+    top: -6rem;
+    left: -3rem;
+  }
+}

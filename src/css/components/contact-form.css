@@ -1,0 +1,15 @@
+.contact-form {
+  display: grid;
+  width: min(90vw, 30rem);
+}
+.contact-form__input {
+  display: grid;
+  position: relative;
+}
+.contact-form__input label {
+  position: absolute;
+}
+.contact-form__input {
+}
+.contact-btn {
+}
