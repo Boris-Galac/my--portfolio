@@ -190,6 +190,7 @@
   place-content: center;
   text-align: center;
   gap: 1rem;
+  overflow: hidden;
 }
 .contact-socials__card-front {
   background-color: var(--neutral-900);
@@ -198,8 +199,28 @@
   position: relative;
   background-color: var(--neutral-800);
   transform: rotateY(180deg);
+  isolation: isolate;
 }
 .contact-socials__card-back::after {
-  column-width: "";
+  content: "";
   position: absolute;
+  inset: 0;
+  z-index: -1;
+  mix-blend-mode: overlay;
+}
+
+.contact-socials__card-1 .contact-socials__card-back::after {
+  background: url("/src/assets/images/social-contact-back-1.png") no-repeat
+    center center/cover;
+  opacity: 0.5;
+}
+.contact-socials__card-2 .contact-socials__card-back::after {
+  background: url("/src/assets/images/social-contact-back-2.png") no-repeat
+    center center/cover;
+  opacity: 0.5;
+}
+.contact-socials__card-3 .contact-socials__card-back::after {
+  background: url("/src/assets/images/social-contact-back-3.png") no-repeat
+    center center/cover;
+  opacity: 0.5;
 }

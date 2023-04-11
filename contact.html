@@ -131,7 +131,7 @@
         <!-- CONTACT SECTION -->
         <div class="contact-main__inner-wrapper d-grid gap-4">
           <section class="contact">
-            <h2 class="work--subheading mb-2">Send me a message</h2>
+            <h2 class="work--subheading mb-4">Send me a message</h2>
             <div class="contact__wrapper d-flex gap-2">
               <div class="contact__row">
                 <p class="p-text">
@@ -142,39 +142,53 @@
                 </p>
               </div>
               <div class="contact__row">
-                <form class="contact-form d-grid gap-2">
+                <form class="contact-form d-grid gap-3">
                   <div class="contact-form__input">
-                    <label for="name">Your full name</label>
                     <input type="text" name="name" id="name" />
+                    <label for="name">Your full name</label>
                   </div>
                   <div class="contact-form__input">
-                    <label for="mail">Email</label>
                     <input type="email" name="email" id="email" />
+                    <label for="mail">Email</label>
                   </div>
                   <div class="contact-form__input">
-                    <label for="textarea">Leave your message</label>
                     <textarea
                       name="textarea"
                       id="textarea"
                       cols="30"
                       rows="10"
                     ></textarea>
+                    <label for="textarea">Leave your message</label>
                   </div>
-                  <input
-                    class="contact-btn"
-                    type="submit"
-                    value="Send message"
-                  />
+                  <button class="contact-form__btn" type="submit">
+                    <div class="svg-wrapper-1">
+                      <div class="svg-wrapper">
+                        <svg
+                          height="24"
+                          width="24"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M0 0h24v24H0z" fill="none"></path>
+                          <path
+                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <span>Send</span>
+                  </button>
                 </form>
               </div>
             </div>
           </section>
           <!-------------------------->
           <section class="contact-socials mb-4">
-            <h2 class="work--subheading mb-2">Also you can contact by:</h2>
+            <h2 class="work--subheading mb-4">Also you can contact by:</h2>
             <div class="contact-socials__wrapper flex-center gap-4">
               <div
-                class="contact-socials__card"
+                class="contact-socials__card contact-socials__card-1"
                 aria-label="contact card for facebook"
               >
                 <div class="contact-socials__card-inner-wrapper">
@@ -185,7 +199,7 @@
                     />
                   </div>
                   <div class="contact-socials__card-back">
-                    <h3>Facebook</h3>
+                    <h3 class="contact-socials__card-heading">Facebook</h3>
                     <a href="www.facebook.com/boris.galac"
                       ><p class="p-text">www.facebook.com/boris.galac</p></a
                     >
@@ -193,7 +207,7 @@
                 </div>
               </div>
               <div
-                class="contact-socials__card"
+                class="contact-socials__card contact-socials__card-2"
                 aria-label="contact card for phone"
               >
                 <div class="contact-socials__card-inner-wrapper">
@@ -204,7 +218,7 @@
                     />
                   </div>
                   <div class="contact-socials__card-back">
-                    <h3>call me</h3>
+                    <h3 class="contact-socials__card-heading">call me</h3>
                     <a href="tel:+385996682736"
                       ><p class="p-text">099/668-2736</p></a
                     >
@@ -212,7 +226,7 @@
                 </div>
               </div>
               <div
-                class="contact-socials__card"
+                class="contact-socials__card contact-socials__card-3"
                 aria-label="contact card for gmail"
               >
                 <div class="contact-socials__card-inner-wrapper">
@@ -223,7 +237,7 @@
                     />
                   </div>
                   <div class="contact-socials__card-back">
-                    <h3>send me mail</h3>
+                    <h3 class="contact-socials__card-heading">send me mail</h3>
                     <a href="mailto:boris.galac@gmail.com"
                       ><p class="p-text">boris.galac@gmail.com</p></a
                     >
